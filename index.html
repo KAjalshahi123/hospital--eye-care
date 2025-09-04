@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eye Care Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Eye Care Hospital</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="cta">Book Appointment</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Quality Eye Care You Can Trust</h1>
+      <p>Providing expert ophthalmology services with modern equipment and experienced specialists.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Appointment</button>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Comprehensive eye care services for patients of all ages.</p>
+    <div class="services">
+      <div class="service-card">
+        <img src="https://www.laxmieye.org/blog/wp-content/uploads/2024/12/image-2.png" alt="Eye Exam">
+        <h3>Eye Examination</h3>
+        <p>Comprehensive vision testing and health check for your eyes.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://www.shutterstock.com/image-photo/medical-laser-eye-correction-medicine-260nw-1981542395.jpg" alt="Laser Surgery">
+        <h3>Laser Surgery</h3>
+        <p>Advanced laser treatment for vision correction and eye diseases.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxCVH8Qyf4R6XBsx1FC_Uaqr1CkzSxaEhe9JVkmgyji0npWWkcD0n__ItqxgWlDrYyewY&usqp=CAU" alt="Lens & Glasses">
+        <h3>Lens & Glasses</h3>
+        <p>Prescription lenses and glasses for optimal vision clarity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section id="doctors">
+    <h2>Our Specialists</h2>
+    <p>Meet our experienced ophthalmologists dedicated to your eye health.</p>
+    <div class="doctors">
+      <div class="doctor-card">
+        <img src="Zakir .jpg" alt="Manager Zakir khan ">
+        <h3>Manager Zakir khan</h3>
+        <!-- <p>Ophthalmologist - Cataract & LASIK Specialist</p> -->
+      </div>
+      <div class="doctor-card">
+        <img src="sakib.jpg" alt="Dr. John">
+        <h3>Dr. sakib Khan </h3>
+        <p>Optometrist - Pediatric Eye Care Expert</p>
+      </div>
+      <div class="doctor-card">
+        <img src="doctor.jpg" alt="Dr.Naseem Rizwi">
+        <h3>Dr.Naseem Rizwi</h3>
+        <p>Ophthalmologist - Retina & Glaucoma Specialist</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Eye Care Hospital</h2>
+    <div class="about-grid container">
+      <div>
+        <p>Eye Care Hospital is committed to providing top-quality ophthalmology services with state-of-the-art technology and a team of experienced professionals. We ensure personalized care for each patient, focusing on both treatment and prevention.</p>
+        <ul>
+          <li>Advanced diagnostic equipment</li>
+          <li>Expert surgical and medical care</li>
+          <li>Patient-focused care and counseling</li>
+        </ul>
+      </div>
+      <div><img src="hospitaleye.jpg" alt="Hospital Image"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to book an appointment? Reach out to us today.</p>
+    
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+       <input type="tel" name="phone" placeholder=" Number" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Eye Care Hospital | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
